@@ -1,32 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<center>
-    <style>
-        .parallax {
-  /* The image used */
-  background-image: url("https://images.unsplash.com/photo-1527176930608-09cb256ab504?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+<!-- <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> -->
+<style>
+    body {
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .parallax {
 
-  /* Set a specific height */
-  min-height: 425px; 
+        background-image: url("https://images.unsplash.com/photo-1527176930608-09cb256ab504?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-    <head>
-        <nav>
-            <a href=index.html>Home</a> | 
-            <a href=tags.html>Tags</a> | 
-            <a href=nested.html>Nested</a> | 
-            <a href=attributes.html>Attributes</a>
-        </nav>
-        <h1>Melissa Moore-Web Development</h1>
-    </head>
-    <body>
-        <div style="height:1000px;background-color:white;font-size:36px"></div>
-        <p>Hey guys. This is my first time doing any type of web development so please feel free to give me any feedback! This is actually very difficult for me but I'm finding it to be fun!</p>     
-    </body>
-</center>
+        min-height: 425px;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat; no-repeat;
+        background-size: cover;
+
+        position: relative;
+    }
+
+    .container {
+        position: absolute;
+        margin: 20px;
+        width: auto;
+    }
+
+    .topnav a {
+        float: center;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17 px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+<head>
+
+    <nav>
+        <a href=index.html>Home</a> |
+        <a href=tags.html>About</a> |
+        <a href=nested.html>Resume</a> |
+        <a href=attributes.html>Portfolio
+    </nav>
+
+    <h1>MELISSA MOORE</h2>
+    <h2>PUBLIC RELATIONS</h2>
+</head>
+
+<body>
+    <div class="parallax"></div>
+
+    <div style="height:1000px;background-color:white;font-size:36px">
+    <h3>ABOUT ME</h3>
+    <p>As a natural born go-getter, my passion has continuously driven me to expand my knowledge, experience, and relationship in the PR and Marketing field. With a strong background and diverse skill set, I'm confident in the creative ideas and successful solutions I bring to the table. Keep exploring my site to learn more information about me, and reach out directly with any questions.</p>
+</body>
 </html>
