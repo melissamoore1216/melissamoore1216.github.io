@@ -14,22 +14,27 @@ h2 {
     font-size: 30px;
     letter-spacing: 0.8px;
 }
-.topnav {
-    overflow: hidden;
-    background-color: white;
+li {
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 3vh;
 }
-.topnav a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+a{
     text-decoration: none;
-    font-size: 18px;
-    font-family: 'Raleway'
+    color: black;
+    padding: 2vw;
+    font-family: raleway, sans-serif;
 }
-.topnav a:hover {
-    color: #dbdbdb;
+a:hover {
+    color: #DBDBDB;
+}
+nav {
+    width: 100vw;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 .container {
     position: relative;
@@ -49,11 +54,12 @@ h2 {
 </head>
 <body>
     <!--Navbar (sit on top)-->
-    <div class="topnav">
-        <a href=homepage.html>Home</a>
-        <a href=nested.html>Resume</a>
-        <a href=tags.html>Portfolio</a>
-    </div>
+    <nav>
+    <ul>
+        <li><a href=index.html>Home</a></li>
+        <li><a href=tags.html>Resume</a></li>
+        <li><a href=portfolio.html>Portfolio</a></li>
+    </ul>
 <header>
     <!--Header-->
     <div class="container">
