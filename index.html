@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">-->
 <!--<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">-->
 <title>Homepage</title>	
@@ -104,13 +104,11 @@ ul {
 .container {
     position: relative;
     text-align: center;
-    color: white;
     margin: 0;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-image: url("https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
-    height: 400px;
+    padding: 12px 0px 8px 0px;
 }
 .centered {
     position: absolute;
@@ -151,71 +149,43 @@ ul {
     transform: translate(-50%, -50%);
     width: 50vw;
 }
-.portfolio {
-    background-color: #FAFAFA;
-    position: relative;
-    text-align: center;
-    margin: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 700px;
+* {
+  box-sizing: border-box;
 }
-img {
-  width: 100%;
-  height: auto;
+
+.row {
+  margin: 8px -16px;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em;
-  align-items: center;
+
+/* Add padding BETWEEN each column */
+.row > .column {
+  padding: 8px;
 }
-.work {
-  position: relative;
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: right;
+  width: 50%;
 }
-.work-image {
-  line-height: 0;
-  overflow: hidden;
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.work-image img {
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1);
-}
-.work-title {
-  font-size: 25px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: lighter;
-  letter-spacing: 0.15em;
-  text-decoration: none;
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity .5s;
-  background: rgb(24,24,24);
-  color: rgb(255,250,240);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.work:hover .work-title {
-  opacity: 10;
-}
-.work:hover .work-image img {
-  filter: blur(8px);
-}
-/* for touch screen devices */
-@media (hover: none) { 
-  .work {
-    opacity: 1;
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
   }
-  .work img {
-    filter: blur(2px);
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
 }
 </style>
@@ -250,41 +220,26 @@ img {
     </div>
 </div>
 
-<div class="portfolio">
-  <div class"centered">
-  <h3>Portfolio</h3>
-  <hr>
-  <div class="grid-container">
-    <article id="3685" class="work">
-      <a class="work-title" href="#">
-                    Public Relations                      </a>
-      <div class="work-image">
-        <a href="#">
-                        <img width="300" height="169" src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="public relations">      </a>
-      </div>
-    </article>
-
-    <article id="3688" class="work">
-      <a class="work-title" href="#">
-                    Strategy                      </a>
-      <div class="work-image">
-        <a href="#">
-                        <img width="300" height="169" src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" alt="strategy">    </a>
-      </div>
-    </article>
-
-    <article id="3691" class="work">
-      <a class="work-title" href="#">
-                    Content Creation                        </a>
-      <div class="work-image">
-        <a href="#">
-                        <img width="300" height="169" src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="content development">    </a>
-      </div>
-    </article>
-  </div>
-  </div>
-</div>
-
+<div class="container" style="background-color:#FAFAFA;>
+<h3>PORTFOLIO</h3>
+<hr>
+	<div class="row">
+  		<div class="column">
+        	<div class="content">
+      			<img src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="public relations" style="width:100%">
+    		</div>
+  		</div>
+  		<div class="column">
+    		<div class="content">
+    			<img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" alt="strategy" style="width:100%">
+    		</div>
+  		</div>
+  		<div class="column">
+    		<div class="content">
+    			<img src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="content creation" style="width:100%">
+    		</div>
+  		</div>
+	</div>
 </div>
  
 <script src=”functions.js”></script>  
