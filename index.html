@@ -149,49 +149,40 @@ ul {
     transform: translate(-50%, -50%);
     width: 50vw;
 }
+.container {
+	position: relative;
+    text-align: center;
+    margin: 0px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 * {
   box-sizing: border-box;
 }
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
+/* Create two equal columns that floats next to each other */
 .column {
-  float: right;
+  float: left;
   width: 50%;
+  padding: 10px;
 }
-
-/* Clear floats after rows */ 
+.column img {
+  margin-top: 12px;
+}
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 </style>
 </head>
 <body>
 
+<!--Parallax/Nav/Header-->
 <div class="parallax">
     <nav>
     	<ul style="font-family:'Raleyway', sans-serif;">
@@ -211,35 +202,33 @@ ul {
     </center>
 </div>
 
+<!--About Me-->
 <div class="container">
-    <img src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Black Texture" style="height:400px;width:100%;">
+	<img src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Black Texture" style="height:400px;width:100%;">
     <div class="centered">
-        <h3>ABOUT ME</h3>
-	    <hr>    
-	<p>As a natural-born go-getter, my passion has continuously driven me to expand my knowledge, experience, and relationship in the PR and Marketing field. With a strong background and diverse skill set, I’m confident in the creative ideas and successful solutions I bring to the table. Keep exploring my site to learn more information about me, and reach out directly with any questions.</p>
+    	<h3 style="color:white">ABOUT ME</h3>
+        <hr>
+        <p style="color:white">As a natural-born go-getter, my passion has continuously driven me to expand my knowledge, experience, and relationship in the PR and Marketing field. With a strong background and diverse skill set, I’m confident in the creative ideas and successful solutions I bring to the table. Keep exploring my site to learn more information about me, and reach out directly with any questions.</p>
     </div>
 </div>
 
-<div class="container" style="background-color:#FAFAFA;>
-<h3>PORTFOLIO</h3>
-<hr>
-	<div class="row">
-  		<div class="column">
-        	<div class="content">
-      			<img src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="public relations" style="width:100%">
-    		</div>
-  		</div>
-  		<div class="column">
-    		<div class="content">
-    			<img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" alt="strategy" style="width:100%">
-    		</div>
-  		</div>
-  		<div class="column">
-    		<div class="content">
-    			<img src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="content creation" style="width:100%">
-    		</div>
-  		</div>
-	</div>
+<!--Portfolio-->
+<div class="container">
+	<img src="https://www.colorhexa.com/fafafa.png" style="height:200px;width:100%">
+    <div class="centered">
+    	<h3>PORTFOLIO</h3>
+        <hr>
+    </div>
+</div>
+<!-- Photo Grid -->
+<div class="row" style="background-color:#FAFAFA"> 
+  <div class="column">
+  <img src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" style="width:100%">
+  <img src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" style="width:100%">
+  </div>
+  <div class="column">
+  <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" style="width:100%">
+  </div>  
 </div>
  
 <script src=”functions.js”></script>  
