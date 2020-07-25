@@ -1,4 +1,5 @@
-<!--Image Grid (I am really stuck on how to know exactly what to use in the provided javascript W3 provided that will match up with what was used in my html specifically in my index.html-->
+<!--Image Grid-->
+<!--I am really stuck on how to know exactly what to use in the provided javascript W3 provided that will match up with what was used in my html specifically in my index-->
 <script>
 // Get the elements with class="column"
 var elements = document.getElementsByClassName("column");
