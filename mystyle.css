@@ -65,8 +65,13 @@ hr {
   margin: 0;
 }
 ul {
-  font-family: 'Raleway', sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-family: 'Raleway', sans-serif;
 li {
    list-style-type: none;
    margin: 3vw 3vw;
@@ -86,18 +91,10 @@ a:hover {
 nav {
     width: 100vw;  
 }
-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
 .fa {
   padding: 10px;
   font-size: 20px;
-  width: 20px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 8px 2px;
