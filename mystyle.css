@@ -7,6 +7,38 @@ html {
   box-sizing: border-box;
 }
 
+nav {
+    width: 100vw;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+}
+
+li {
+    list-style-type: none;
+    margin: 3vw 3vw;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+}
+	
+a{
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+}
+	
+a:hover {
+    color: #DBDBDB;
+}
+
 h1 {
   color: black;
   font-family: 'Raleway', sans-serif;
