@@ -4,6 +4,8 @@ html {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  box-sizing: border-box;
+
 }
 
 h1 {
@@ -15,8 +17,8 @@ h1 {
   letter-spacing: 0.4em;
   position: absolute;
   text-align: center;
-  top: 40%;
-  left: 52%;
+  top: 20%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -55,4 +57,32 @@ hr {
     width: 3em;
     text-align: center;
     margin-bottom: 2em;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 5px;
+  background-color: #FAFAFA;
+}
+
+.container {
+  padding-left: 1em;
 }
