@@ -16,22 +16,9 @@ h1 {
   letter-spacing: 0.4em;
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-h2 {
-    color: black;
-    font-family: 'Nunito', sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
-    letter-spacing: 0.8em;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 52%;
-    transform: translate(-50%, -50%);
 }
 
 h3 {
@@ -58,30 +45,44 @@ hr {
     margin-bottom: 2em;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+* {
+  box-sizing: border-box;
 }
 
 .column {
   float: left;
-  width: 50%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  width: 49.3%;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+    position: relative;
+    text-align: center;
     width: 100%;
-    display: block;
-  }
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding-bottom: 5px;
-  background-color: #FAFAFA;
+.centered {
+  position: absolute;
+  margin-left: 3em;
+  margin-right: 3em;
+  top: 8%;
 }
 
-.container-team {
-  padding-left: 1em;
+.btn {
+  border: none;
+  padding: 14px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.btn:hover {
+background: #eee;
 }
