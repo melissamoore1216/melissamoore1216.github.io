@@ -3,6 +3,17 @@
 <head>
     <!--CSS Styling Link-->
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <!--Use Script tag to change element-->
+    <script type="text/javascript">
+    	function ChangeCenteredText () {
+            var centerTag = document.getElementById ("myCenter");
+                // works if the element only contains pure text
+            var oldText = centerTag.innerHTML;
+            newText = oldText.substr (1) + oldText.charAt (0);
+            centerTag.innerHTML = newText;
+        }
+    }
+    </script>
     <title>JS Assignment</title>
 </head>
 <body>
