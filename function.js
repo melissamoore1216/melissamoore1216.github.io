@@ -1,27 +1,15 @@
-<!--Image Grid-->
-<script>
-// Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
-
-// Declare a loop variable
-var i;
-
-// Two images side by side
-function two() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "50%";  // IE10
-    elements[i].style.flex = "50%";
-  }
+var item1;
+var item2;
+var item3;
+document.getElementById("changeList").onclick = newList;
+function newList() {
+    item1 = prompt("Enter a new first thing: ");
+    item2 = prompt("Enter a new second thing: ");
+    item3 = prompt("Enter a new third thing: ");
+    updateList();
 }
-
-// Add active class to the current button (highlight it)
-var header = document.getElementById("myHeader");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+function updateList() {
+    document.getElementById("firstThing").innerHTML = item1;
+    document.getElementById("secondThing").innerHTML = item2;
+    document.getElementById("thirdThing").innerHTML = item3;
 }
-</script>
