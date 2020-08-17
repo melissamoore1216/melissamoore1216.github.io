@@ -118,3 +118,13 @@ hr {
 .btn:hover {
 background: #eee;
 }
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: #FAFAFA;
+   text-align: center;
+   height: 100px;
+}
